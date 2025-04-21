@@ -1,0 +1,24 @@
+plugin:
+    name: 'rade31.simplecart::lang.plugin.name'
+    description: 'rade31.simplecart::lang.plugin.description'
+    author: Rade31
+    icon: wn-icon-shopping-cart
+    replaces: {}
+permissions:
+    admin:
+        tab: 'rade31.simplecart::lang.permissions.tab'
+        label: 'rade31.simplecart::lang.permissions.label'
+navigation:
+    simplecart:
+        label: 'rade31.simplecart::lang.menu.label'
+        url: rade31/simplecart/orders
+        icon: icon-shopping-cart
+        sideMenu:
+            orders:
+                label: 'rade31.simplecart::lang.menu.orders'
+                url: rade31/simplecart/orders
+                icon: icon-cart-shopping
+            products:
+                label: 'rade31.simplecart::lang.menu.products'
+                url: rade31/simplecart/products
+                icon: icon-basket-shopping

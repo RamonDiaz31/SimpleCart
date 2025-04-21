@@ -1,0 +1,35 @@
+
+<div class="control-popup modal fade" id="modal-search-product" tabindex="-1" role="dialog">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h4 class="modal-title">Search Products</h4>
+            </div>
+            <div class="modal-body">
+
+                <div class="form-group">
+
+                    <input class="form-control " name="search" value="">
+
+                </div>
+
+                <div class="form-buttons">
+                    <button type="submit" class="btn btn-default" data-request="<?= $this->getEventHandler('onSearchProduct') ?>"
+                        data-load-indicator="<?= e(trans('backend::lang.form.saving')) ?>">Search</button>
+                </div>
+
+
+
+                <div id="<?= $this->getId('div-search-product') ?>">
+
+                </div>
+            </div>
+            <div class="modal-footer ">
+
+                <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+
+            </div>
+        </div>
+    </div>
+</div>

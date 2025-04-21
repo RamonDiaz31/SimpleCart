@@ -1,0 +1,5 @@
+<?php foreach ($cart['toDelete']  as $item): ?>
+  
+        <input type="hidden" name="<?= $name ?>[toDelete][]" value="<?= $item ?>">
+  
+<?php endforeach ?>

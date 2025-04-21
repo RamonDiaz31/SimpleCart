@@ -1,0 +1,25 @@
+columns:
+    id:
+        label: id
+        type: text
+    name:
+        label: name
+        type: text
+    description:
+        label: description
+        type: text     
+    purchase_price:
+        label: purchase_price
+        type: number     
+    unit_price:
+        label: unit_price
+        type: number
+    barcode:
+        label: barcode
+        type: text                       
+    created_at:
+        label: created_at
+        type: datetime
+    updated_at:
+        label: updated_at
+        type: datetime

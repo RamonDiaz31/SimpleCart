@@ -1,0 +1,27 @@
+fields:
+    name:
+        label: 'rade31.simplecart::lang.app.product.name'
+        span: left
+        type: text
+    purchase_price:
+        label: 'rade31.simplecart::lang.app.product.purchase_price'
+        type: number
+        step: 1  
+        min: 1   
+        span: left 
+    unit_price:
+        label: 'rade31.simplecart::lang.app.product.unit_price'
+        type: number
+        step: 1  
+        min: 1   
+        span: right 
+    barcode:
+        label: 'rade31.simplecart::lang.app.product.barcode'
+        type: text  
+        span: left
+    description:
+        label: 'rade31.simplecart::lang.app.product.description'
+        span: full
+        type: textarea
+
+

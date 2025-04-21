@@ -1,0 +1,13 @@
+<div class="cols">
+    <?php foreach ($products as  $product): ?>
+
+
+        <div class="form-group">
+
+            <button data-product_id="<?= $product->id ?>" type="button" class="btn btn-default js-btn-product-search-add"
+                data-load-indicator="<?= e(trans('backend::lang.form.saving')) ?>"><?= $product->name ?></button>
+        </div>
+
+
+    <?php endforeach ?>
+</div>

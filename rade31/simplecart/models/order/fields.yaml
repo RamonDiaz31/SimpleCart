@@ -1,0 +1,18 @@
+alias: orderForm
+fields:
+    user_id:
+        label: 'rade31.simplecart::lang.app.order.user_id'
+        type: text  
+        span: full 
+        cssClass: hidden
+    products:
+        label: 'rade31.simplecart::lang.app.order.products.'
+        type: cart  
+        span: full 
+        updateField: total
+    total:
+        label: 'rade31.simplecart::lang.app.order.total'
+        type: text
+        cssClass: hidden
+
+

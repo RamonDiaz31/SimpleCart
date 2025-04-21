@@ -1,0 +1,8 @@
+fields:
+    products:
+        label: 'rade31.simplecart::lang.app.order.total'
+        type: customform  
+        relation: products
+        pivot: true
+        span: full 
+        updateField: total

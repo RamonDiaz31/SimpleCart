@@ -1,0 +1,10 @@
+name: Products
+form: $/rade31/simplecart/models/product/fields.yaml
+modelClass: Rade31\SimpleCart\Models\Product
+defaultRedirect: rade31/simplecart/products
+create:
+    redirect: rade31/simplecart/products/create
+    redirectClose: rade31/simplecart/products
+update:
+    redirect: rade31/simplecart /products/update/:id
+    redirectClose: rade31/simplecart/products

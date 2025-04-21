@@ -1,0 +1,50 @@
+<div id="<?= $this->getId() ?>"
+    data-control="cart"
+    <?= $updateField ? 'data-update_field=' . $updateField . ' data-update_value=' . $updateValue : '' ?>>
+
+    <div class="col-md-6">
+
+        <input placeholder="code" class="form-control " name="searchOne" value="">
+        <button type="button" class="js-btn-cart-item-add"
+
+            data-load-indicator="<?= e(trans('backend::lang.form.saving')) ?>" class="btn btn-primary ">
+            <?= e(trans('backend::lang.form.add')) ?>
+        </button>
+
+    </div>
+    <div class="col-md-4">
+        <input type="hidden" class="form-control " name="filterOne" value="barcode">
+        <button data-toggle="modal" href="#modal-search-product" type="button"
+            class=" btn btn-secondary">
+            <?= e(trans('rade31.simplecart::lang.form.all')) ?>
+        </button>
+    </div>
+
+
+
+
+
+    <?= $this->makePartial('modalsearchproduct') ?>
+    <?= $this->makePartial('table') ?>
+
+
+
+
+    <?= $this->makePartial('modalcartitemedit') ?>
+    <?= $this->makePartial('modalcartitemdelete') ?>
+
+
+    <div id="<?= $this->getId('deleteBinding') ?>">
+        <?php if (array_key_exists('toDelete', $cart)): ?>
+            <?php foreach ($cart['toDelete']  as $item): ?>
+
+                <input type="hidden" name="<?= $name ?>[toDelete][]" value="<?= $item ?>">
+
+            <?php endforeach ?>
+        <?php endif ?>
+    </div>
+
+
+
+
+</div>

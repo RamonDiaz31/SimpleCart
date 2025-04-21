@@ -1,0 +1,13 @@
+columns:
+    quantity:
+        label: quantity
+        type: text
+    price:
+        label: price
+        type: number
+    created_at:
+        label: created_at
+        type: datetime
+    updated_at:
+        label: updated_at
+        type: datetime

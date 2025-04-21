@@ -1,0 +1,45 @@
+<?php foreach ($cart['items'] as $index => $item): ?>
+    <tr>
+
+        <td>
+            <?= $item["barcode"] ?>
+
+
+
+        </td>
+        <td>
+            <?= $item["name"] ?>
+
+        </td>
+        <td>
+            <?= $item["price"] ?>
+            <input type="hidden" name="<?= $name ?>[<?= $item['product_id']  ?>][price]" value="<?= $item["price"] ?>">
+        </td>
+        <td>
+            <?= $item["quantity"] ?>
+            <input type="hidden" name="<?= $name ?>[<?= $item['product_id']  ?>][quantity]" value="<?= $item["quantity"] ?>">
+        </td>
+        <td>
+            <?= $item["subtotal"] ?>
+            <input type="hidden" name="<?= $name ?>[<?= $item['product_id'] ?>][subtotal]" value="<?= $item["subtotal"] ?>">
+        </td>
+        <td>
+          
+
+            <button data-product_id="<?= $item['product_id'] ?>" data-product_name="<?= $item['name'] ?>" data-toggle="modal" data-product_quantity="<?= $item['quantity'] ?>" href="#cart-item-edit" type="button"
+                class="js-btn-cart-item-edit btn btn-warning btn-sm wn-icon-edit">
+                <?= e(trans('backend::lang.form.update_title',['name' => ''])) ?>
+            </button>
+           
+
+            <button data-product_id="<?= $item['product_id'] ?>" data-product_name="<?= $item['name'] ?>" data-toggle="modal" href="#cart-item-delete" type="button"
+                class="js-btn-cart-item-delete btn btn-warning btn-sm wn-icon-trash">
+                <?= e(trans('backend::lang.form.delete')) ?>
+            </button>
+        </td>
+
+
+
+    </tr>
+
+<?php endforeach ?>

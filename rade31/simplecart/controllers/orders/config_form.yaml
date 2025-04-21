@@ -1,0 +1,10 @@
+name: Orders
+form: $/rade31/simplecart/models/order/fields.yaml
+modelClass: Rade31\SimpleCart\Models\Order
+defaultRedirect: rade31/simplecart/orders
+create:
+    redirect: rade31/simplecart/orders/create
+    redirectClose: rade31/simplecart/orders
+update:
+    redirect: rade31/simplecart/orders/update/:id
+    redirectClose: rade31/simplecart/orders

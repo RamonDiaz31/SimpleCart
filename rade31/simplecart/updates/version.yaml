@@ -1,0 +1,5 @@
+1.0.1:
+    - 'Initialize plugin.'
+    - 'v1.0.1/CreateTableProducts.php'
+    - 'v1.0.1/CreateTableOrders.php'
+    - 'v1.0.1/CreateTableOrderHasProducts.php'
